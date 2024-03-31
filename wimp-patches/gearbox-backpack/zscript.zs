@@ -15,7 +15,7 @@ class WIMP_HDGearBoxReplacer : EventHandler
 		if (pack.Owner) wimp = WIMP_HDGearBox(pack.Owner.GiveInventoryType("WIMP_HDGearBox"));
 		else
 		{
-			wimp = WIMP_HDGearBox(Actor.Spawn("WIMP_HDGearBox", pack.Owner.pos));
+			wimp = WIMP_HDGearBox(Actor.Spawn("WIMP_HDGearBox", pack.pos));
 
 			wimp.Angle = pack.Angle;
 			wimp.A_ChangeVelocity(1.5, 0, 1, CVF_RELATIVE);
